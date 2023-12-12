@@ -1,5 +1,6 @@
 import { FaDownload } from "react-icons/fa6";
 import { Link } from "react-scroll";
+import cv from "../../assets/cv.pdf";
 
 const Navbar = () => {
   const links = (
@@ -117,10 +118,12 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <button className="btn mr-5 bg-transparent border-[#FF3811] text-[#FF3811] font-bold hover:bg-[#FF3811]  hover:text-white">
-          <FaDownload className="text-[#FF3811] font-bold hover:bg-[#FF3811]  hover:text-white"></FaDownload>{" "}
-          CV
-        </button>
+        <a href={cv} download="resume">
+          <button className="btn mr-5 bg-transparent border-[#FF3811] text-[#FF3811] font-bold hover:bg-[#FF3811]  hover:text-white">
+            <FaDownload className="text-[#FF3811] font-bold hover:bg-[#FF3811]  hover:text-white"></FaDownload>{" "}
+            Resume
+          </button>
+        </a>
       </div>
     </div>
   );

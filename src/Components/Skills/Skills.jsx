@@ -18,7 +18,7 @@ const Skills = () => {
       <h1 className="text-5xl my-24 text-center font-bold text-[#f72e05] hover:shadow-xl hover:shadow-white">
         _Skills
       </h1>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 ml-10 gap-5 md:grid-cols-3 lg:grid-cols-4">
         {/* card-1 */}
         <div className="rounded-xl w-[160px] h-[160px]  shadow-[#f72e05]	shadow-2xl ">
           <div className="flex justify-center pt-3">

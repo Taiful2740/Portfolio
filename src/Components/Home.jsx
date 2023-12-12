@@ -10,15 +10,22 @@ import About from "./About/About";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import Education from "./Education/Education";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
     <div>
-      <div id="home" className="flex items-center w-full min-h-screen">
+      <div
+        id="home"
+        className="grid mx-auto md:grid-flow-col lg:grid-flow-col items-center w-full min-h-screen fle"
+      >
         <div className="flex-1">
           <div className="">
-            <h1 className="text-5xl font-bold ">Md Taiful Islam</h1>
-            <h2 className="text-3xl font-semibold mt-5">
+            <h1 className="text-5xl text-center lg:text-5xl font-bold ">
+              Md Taiful Islam
+            </h1>
+            <h2 className="text-center lg:text-3xl font-semibold mt-5">
               <TypeAnimation
                 sequence={[
                   "I'm a front-end web developer from Bangladesh",
@@ -29,7 +36,7 @@ const Home = () => {
               />
             </h2>
           </div>
-          <div className="mt-5">
+          <div className="flex justify-center mt-2 lg:mt-5">
             <Link to="/contact">
               <button className="btn mr-5 bg-[#FF3811] border-[#FF3811] text-white font-bold hover:bg-transparent  hover:text-[#FF3811] hover:border-[#FF3811]">
                 Hire Me
@@ -37,11 +44,11 @@ const Home = () => {
             </Link>
             <a href={cv} download="resume">
               <button className="btn mr-5 bg-transparent border-[#FF3811] text-[#FF3811] font-bold hover:bg-[#FF3811]  hover:text-white">
-                Download CV
+                Download Resume
               </button>
             </a>
           </div>
-          <div className="flex gap-7 mt-8 ">
+          <div className="flex justify-center gap-7 mt-8 ">
             <Link to="https://github.com/Taiful2740">
               {" "}
               <img
@@ -74,14 +81,16 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 ml-10">
           <img className="w-96 " src={banner} alt="" />
         </div>
       </div>
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
+      <Education></Education>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };

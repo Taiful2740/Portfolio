@@ -3,12 +3,13 @@ import marriage from "../../assets/marrage.png";
 import brand from "../../assets/brand.png";
 import donation from "../../assets/donation.png";
 const Projects = () => {
+  document.title = "Taiful | Projects";
   return (
     <div id="projects">
       <h1 className="text-5xl my-24 text-center font-bold text-[#f72e05] hover:shadow-xl hover:shadow-white">
         _Projects
       </h1>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid ml-14 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <Link to="https://extraordinary-croissant-55d465.netlify.app/">
           <div>
             <div className="card card-compact w-96 bg-base-100 rounded-xl  shadow-[#f72e05]	shadow-2xl">
